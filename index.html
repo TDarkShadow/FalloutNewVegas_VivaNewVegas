@@ -20,6 +20,13 @@
                 document.createElement(tags[i]);
             }
         })();
+
+        document.body.addEventListener('click', function (event) {
+            // filter out clicks on any other elements
+            if (event.target.nodeName == 'A' && event.target.getAttribute('aria-disabled') == 'true') {
+                event.preventDefault();
+            }
+        });
     </script>
 </head>
 
@@ -31,10 +38,15 @@
     </h1>
     <p class="center"><img src="img/logoGuide.png" alt="Fallout Mascotte In New Vegas Gambler Style" width="378" height="480"><br>
         <em class="center">“If you want to see the fate of democracies, look out the windows.”</em></p>
-    <p><strong><a href="" target="_blank" rel="noopener noreferrer">Changelog</a></strong></p>
-    <p><strong><a href="" target="_blank" rel="noopener noreferrer">Future Considerations</a></strong></p>
+    <p><strong><span class="isDisabled"><a class="isDisabled" href="" target="_blank" rel="noopener noreferrer"
+                    aria-disabled="true">Changelog</a></span></strong>
+    </p>
     <p>
-        <strong><a href="" target="_blank" rel="noopener noreferrer">Discord</a></strong>
+        <strong><span class="isDisabled"><a class="isDisabled" href="" target="_blank" rel="noopener noreferrer"
+                    aria-disabled="true">Future Considerations</a></span></strong>
+    </p>
+    <p>
+        <strong><span class="isDisabled"><a href="" target="_blank" rel="noopener noreferrer" aria-disabled="true">Discord</a></span></strong>
         - For troubleshooting/help,
         suggestions, and announcements when the guide is updated
     </p>
