@@ -2,233 +2,247 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <meta name="theme-color" content="#eba34e">
-    <title>Viva New Vegas</title>
-    <meta name="description" , content="A Comprehensive Fallout New Vegas Modding Guide">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript">
-        (function () {
-            for (var tags = ['main', 'figure', 'figcaption'], i = 0; i < tags.length; i++) {
-                document.createElement(tags[i]);
-            }
-        })();
-
-        document.body.addEventListener('click', function (event) {
-            // filter out clicks on any other elements
-            if (event.target.nodeName == 'A' && event.target.getAttribute('aria-disabled') == 'true') {
-                event.preventDefault();
-            }
-        });
-    </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <meta name="theme-color" content="#eba34e">
+  <title>Viva New Vegas</title>
+  <meta name="description" , content="A Comprehensive Fallout New Vegas Modding Guide">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript">
+    (function () {
+      for (var tags = ["main", "figure", "figcaption"], i = 0; i < tags.length; i++) {
+        document.createElement(tags[i]);
+      }
+    })();
+    document.body.addEventListener("click", function (event) {
+      // filter out clicks on any other elements
+      if (event.target.nodeName == "A" && event.target.getAttribute("aria-disabled") == "true") {
+        event.preventDefault();
+      }
+    });
+  </script>
 </head>
 
 <body>
-    <h1 class="center">
-        <b>Viva New Vegas</b>
-        <br>
-        A Comprehensive Fallout New Vegas Modding Guide by Qolore
-    </h1>
-    <p class="center"><img src="img/logoGuide.png" alt="Fallout Mascotte In New Vegas Gambler Style" width="378" height="480"><br>
-        <em class="center">“If you want to see the fate of democracies, look out the windows.”</em></p>
-    <p><strong><span class="isDisabled"><a class="isDisabled" href="" target="_blank" rel="noopener noreferrer"
-                    aria-disabled="true">Changelog</a></span></strong>
-    </p>
-    <p>
-        <strong><span class="isDisabled"><a class="isDisabled" href="" target="_blank" rel="noopener noreferrer"
-                    aria-disabled="true">Future Considerations</a></span></strong>
-    </p>
-    <p>
-        <strong><span class="isDisabled"><a href="" target="_blank" rel="noopener noreferrer" aria-disabled="true">Discord</a></span></strong>
-        - For troubleshooting/help,
-        suggestions, and announcements when the guide is updated
-    </p>
-    <hr>
-    <h1 id="Pre-Installation-Checklist">Pre-Installation Checklist</h1>
-    <dl>
-        <dt>A freshly installed, legal copy of Fallout New Vegas, with all the DLC with the exception of the pre-order
-            packs. Make sure it is not in either Program Files or Program Files (x86)</dt>
-        <dd>I suggest you install it on an <abbr title="Solid State Drive">SSD</abbr> if you can.</dd>
-        <dt>Launch the Fallout New Vegas Launcher and have it pick a preset for you.</dt>
-        <dd>You may want to go through and make sure all the settings are to your liking, but some will be tweaked
-            later anyways</dd>
-        <dt>If you use Steam, disable the Steam Overlay for Fallout New Vegas.</dt>
-        <dd>You can do this by;
-            <ol>
-                <li>loading up Steam</li>
-                <li>click <b>Library</b></li>
-                <li>search for <b>Fallout New Vegas</b></li>
-                <li>right click on the game</li>
-                <li>click <b>properties</b></li>
-                <li>under the <b>General</b> tab, uncheck <b>Enable Steam overlay in game</b>.</li>
-            </ol>
-        </dd>
-    </dl>
-    <h1 id="Authors-System-Specs">Authors System Specs</h1>
-    <table>
-        <tr>
-            <th colspan="2" class="center">Software</th>
-        </tr>
-        <tr>
-            <th>Operating System</th>
-            <td> Windows 7 Pro</td>
-        </tr>
-        <tr>
-            <th colspan="2" class="center">Hardware</th>
-        </tr>
-        <tr>
-            <th>CPU</th>
-            <td>Intel Core i5 7500</td>
-        </tr>
-        <tr>
-            <th>System RAM</th>
-            <td>8 GB 8GB 2400mhz DDR4</td>
-        </tr>
-        <tr>
-            <th>GPU</th>
-            <td>MSI Radeon RX 470 Armor 4GB</td>
-        </tr>
-    </table>
-    <p>
-        Authors note:
-        My <abbr title="Operating System">OS</abbr>, <abbr title="Fallout New Vegas">FNV</abbr> and <abbr title="Mod Organizer 2">MO2</abbr>
-        are installed on a Samsung EVO <abbr title="Solid State Drive">SSD</abbr> 250GB.
-        My downloads are stored on a Toshiba <abbr title="Hard Disk Drive">HDD</abbr> 1TB.
-        Windows 7 is currently the best option for modding Fallout New Vegas.
-        Windows 10 has a few issues that I will make note of throughout the guide.
-    </p>
-    <hr>
-    <h1 id="Mod-Installation-Advice">Mod Installation Advice</h1>
-    <ul>
-        <li><span class="notice">Main Files</span> + <span class="notice">Updates</span> + <span class="notice">Hotfixes</span>
-            - Install as one mod. (e.g. merge together in MO2)</li>
-        <li><span class="notice">Optional Files</span> - Install as separate mod in MO2</li>
-        <li><span class="notice">Miscellaneous files</span> - Install as separate mod in MO2</li>
-        <li><span class="notice">Patches</span> - Install as separate mod in MO2</li>
-        <li>Read the descriptions, pinned comments, and read-me’s of mods before commenting in the Discord about a
-            mod-specific issue to see if one of them has the solution. It’s also a good idea to read them to see if
-            you
-            will like the mod, as minddessly installing every mod on here might not be the best result for your
-            personal
-            tastes</li>
-        <li>If I don’t give any special install instructions for a mod, just install the main file</li>
-        <li>If I say "<em><span class="notice">Special Install Instructions: Don’t Install the following
-                    Files/Folders:</span></em>",
-            uncheck the box next to the listed file/folder during the installation in MO2</li>
-        <li>Track every mod you install, so you know when it’s updated. I won’t be making announcements when any
-            mods
-            are
-            updated so that’s up to you. Also endorse the mods you if like them</li>
-    </ul>
-    <h1 id="A-Note-About-the-Plugin-Limit">A Note About the Plugin Limit</h1>
-    <p>The Gamebryo engine isn’t exactly very polished. Unlike Skyrim and Fallout 4 that have a max 255 plugin
-        count,
-        Fallout 3 and New Vegas have a soft cap of 140. However, the game can experience instability from 137
-        plugins
-        and
-        onward. For that reason, the guide will always stay under 120 plugins. If you are adding your own mods, try
-        to
-        get
-        familiar with Merge Plugins tool so you can try to stay below 120 plugins. A mod in the guide will warn you
-        when
-        you go above 139 plugins when you are in-game.</p>
-    <hr>
-    <h1 id="Prerequisites">Prerequisites</h1>
-    <p>Install all to any folder where you can access it easily, unless instructed otherwise</p>
-    <h3 id="Mod-Organizer-2"><strong><a href="https://www.nexusmods.com/skyrimspecialedition/mods/6194/?tab=files"
-                target="_blank" rel="noopener">Mod Organizer 2</a></strong></h3>
-    <p>By far the best mod manager for Fallout New Vegas, 3, 4, Skyrim, and SSE.<br>
-        For an explanation of its advantages and a basic tutorial, watch Gopher’s video series <a href="https://www.youtube.com/watch?v=j4ZQpzf_iAE&amp;list=PLE7ddYarj-DcLS9LyjEqOJwFUQIIQewcK"
-            target="_blank" rel="noopener">here</a>.<br>
-        Join the team’s <a href="https://discord.gg/dVChxen" target="_blank" rel="noopener">Discord</a> for
-        developer
-        builds and issue reports</p>
-    <h3 id="FNVEdit"><strong><a href="https://www.nexusmods.com/newvegas/mods/34703?tab=files" target="_blank" rel="noopener">FNVEdit</a></strong></h3>
-    <span class="notice">Special Install Instructions: </span>
-    <blockquote><strong>Download <a href="https://mega.nz/#!0QRVAQKa!6dDsprHGy9iuI85k0QYzNtGzH4vZO4uh_tc7L_671ME"
-                target="_blank" rel="noopener">Generate Bash Tags.pas</a> and the scripts from <a href="https://github.com/matortheeternal/TES5EditScripts"
-                target="_blank" rel="noopener">TES5EditScripts</a></strong><br>
-        <strong>Navigate to <em>…FNVEdit\Edit Scripts</em> and move the script to you just downloaded there</strong><br>
-        <strong>Download <a href="http://www.mediafire.com/file/bktk9439j8xxv80/MteFunctions.7z" target="_blank" rel="noopener">mteFunctions.pas</a>
-            and move the script to <em>…FNVEdit\Edit Scripts</em></strong>
-    </blockquote>
-    Mod editor that will be used to create merged patches, clean plugins, detect conflicts, and add bash tags to
-    mods
-    later
-    in the guide
-    <h3 id="Wrye-Flash-NV"><strong><a href="https://www.nexusmods.com/newvegas/mods/35003?tab=files" target="_blank"
-                rel="noopener">Wrye
-                Flash NV</a></strong></h3>
-    Files to install:
-    <blockquote>
-        <strong>Wrye Flash 17.9 - Standalone Executable</strong>
-    </blockquote>
-    <span class="notice">Special Install Instructions: </span>
-    <blockquote><strong>Extract the <em>Mopy</em> and <em>Data</em> folders to the New Vegas main directory</strong>
-    </blockquote>
-    <p>Multipurpose mod management utility, mainly used for conflict resolution</p>
-    <h3 id="LOOT"><strong><a href="https://www.nexusmods.com/skyrimspecialedition/mods/1918/?tab=files" target="_blank"
-                rel="noopener">LOOT</a></strong></h3>
-    Sorts load order and detects dirty plugins
-    <h3 id="Merge-Plugins"><strong><a href="https://www.nexusmods.com/skyrim/mods/69905?tab=files" target="_blank" rel="noopener">Merge
-                Plugins</a></strong></h3>
-    <p>-Merges plugins to reduce load order</p>
-    <h3 id="FNVLODGen"><strong><a href="https://www.nexusmods.com/newvegas/mods/58562/?tab=files" target="_blank" rel="noopener">FNVLODGen</a></strong></h3>
-    <p>Files to install:</p>
-    <blockquote>
-        <p><strong>FNVLODGen 3.2.1</strong></p>
-    </blockquote>
-    <p>-One-click LOD generator</p>
-    <h1 id="Configuring-Mod-Organizer">Configuring Mod Organizer</h1>
+  <h1 class="center">
+    <b>Viva New Vegas</b>
+    <br />
+    A Comprehensive Fallout New Vegas Modding Guide by Qolore
+  </h1>
+  <p class="center">
+    <img src="img/logoGuide.png" alt="Fallout Mascotte In New Vegas Gambler Style" width="378" height="480" />
+    <br />
+    <em class="center">“If you want to see the fate of democracies, look out the windows.”</em>
+  </p>
+  <p>
+    <strong><span class="isDisabled"><a class="isDisabled" href="" target="_blank" rel="noopener noreferrer"
+          aria-disabled="true">Changelog</a></span></strong>
+  </p>
+  <p>
+    <strong><span class="isDisabled"><a class="isDisabled" href="" target="_blank" rel="noopener noreferrer"
+          aria-disabled="true">Future Considerations</a></span></strong>
+  </p>
+  <p>
+    <strong><span class="isDisabled"><a href="" target="_blank" rel="noopener noreferrer" aria-disabled="true">Discord</a></span></strong>
+    - For troubleshooting/help, suggestions, and announcements when the guide is updated.
+  </p>
+  <hr>
+  <h1 id="Pre-Installation-Checklist">Pre-Installation Checklist</h1>
+  <dl>
+    <dt>A freshly installed, legal copy of Fallout New Vegas, with all the DLC with the exception of the pre-order
+      packs. Make sure it is not in either Program Files or Program Files (x86).</dt>
+    <dd>I suggest you install it on an <abbr title="Solid State Drive">SSD</abbr> if you can.</dd>
+    <dt>Launch the Fallout New Vegas Launcher and have it pick a preset for you.</dt>
+    <dd>You may want to go through and make sure all the settings are to your liking, but some will be tweaked later
+      anyways.</dd>
+    <dt>If you use Steam, disable the Steam Overlay for Fallout New Vegas.</dt>
     <ol>
-        <li>Launch MO2, and on the pop-up box that says <em>Choose Instance</em> pick <em>Portable</em>. On the
-            next
-            pop-up, select your New Vegas game directory path</li>
-        <li>Click <em>No</em> on the Start Tutorial pop-up</li>
-        <li>Click <em>Yes</em> on the pop-up that asks Mod Organizer to handde nxm links</li>
-        <li>In the right pane, right-click and select <em>Enable all</em></li>
-        <li>In the left pane, align the files in the same order that they are in the right pane</li>
-        <li>Launch the game through MO2, and then immediately exit. This is just to set the .ini’s</li>
-        <li>Click the <img src="https://i.imgur.com/90EQ3GH.png" alt=""> button on the top bar of MO2</li>
-        <li>Click on the Default profile, and click <em>Copy</em></li>
-        <li>Name the new profile <em>Viva New Vegas</em>. Make sure <em>Local Game Settings</em> is checked.</li>
-        <li>Select the profile and check <em>Automatic Archive Invalidation</em></li>
-        <li>Close out of that box</li>
-        <li>Select the new profile in the drop-down menu right above the left pane</li>
-        <li>Click the <img src="https://i.imgur.com/yOYsKIb.png" alt=""> button on the top bar of MO2</li>
-        <li>If you are using an SSD and a separate HDD, click the <em>Paths</em> tab, and set the <em>Downloads</em>
-            directory to a location outside of the SSD</li>
-        <li>Click on the <em>Nexus</em> tab and check <em>Automatically Log-In to Nexus</em>, type in your username
-            and
-            password, and click <em>Associate with “Download with manager” links</em> and click <em>Ok</em></li>
-        <li>Click the <img src="https://i.imgur.com/0Y5Msa8.png" alt=""> button on the top bar of MO2</li>
-        <li>In the <em>Title</em> box, type <em>FNVEdit</em></li>
-        <li>In the <em>Binary</em> box, click the three dots on the right and navigate to where FNVEdit is
-            installed
-            and
-            double click <em>FNVEdit.exe</em></li>
-        <li>In the <em>Arguments</em> box, type <em>-IKnowWhatImDoing</em> and click <em>Add</em></li>
-        <li>Add Merge Plugins the same way you added FNVEdit without anything in the <em>Arguments</em> box</li>
-        <li>Launch <em>Merge Plugins</em> through MO2</li>
-        <li>Select the <em>FNV</em> profile and click [OK] and then immediately exit</li>
-        <li>Add <em>-profile FNV</em> to the arguments for <em>Merge Plugins</em></li>
-        <li>Add LOOT, Wrye Flash, and FNVLODGen the same way you added the previous but without anything in the <em>Arguments</em>
-            box</li>
+      <li>Start up Steam.</li>
+      <li>Click <b>Library</b>.</li>
+      <li>Search for <b>Fallout New Vegas</b>.</li>
+      <li>Right click on the game.</li>
+      <li>Click <b>properties</b>.</li>
+      <li>Under the <b>General</b> tab, uncheck <b>Enable Steam overlay in game</b>.</li>
     </ol>
-    <h1 id="INI-Tweaks">INI Tweaks</h1>
-    <ol>
-        <li>Click the <img src="https://i.imgur.com/4poZDGK.png" alt=""> button on the top bar of MO2</li>
-        <li>Select <em>INI Editor</em></li>
-        <li>Paste the following into the <em>FalloutCustom.ini</em> tab:</li>
-        <figure>
-            <pre aria-labelledby="example1-caption"><code contenteditable spellcheck="false">[General]
+  </dl>
+  <h1 id="Authors-System-Specs">Authors System Specs</h1>
+  <table>
+    <tr>
+      <th colspan="2" class="center">Software</th>
+    </tr>
+    <tr>
+      <th>Operating System</th>
+      <td>Windows 7 Pro</td>
+    </tr>
+    <tr>
+      <th colspan="2" class="center">Hardware</th>
+    </tr>
+    <tr>
+      <th>CPU</th>
+      <td>Intel Core i5 7500</td>
+    </tr>
+    <tr>
+      <th>System RAM</th>
+      <td>8 GB 8GB 2400mhz DDR4</td>
+    </tr>
+    <tr>
+      <th>GPU</th>
+      <td>MSI Radeon RX 470 Armor 4GB</td>
+    </tr>
+  </table>
+  <p>
+    Authors note:<br>
+    My <abbr title="Operating System">OS</abbr>, <abbr title="Fallout New Vegas">FNV</abbr> and <abbr title="Mod Organizer 2">MO2</abbr>
+    are installed on a Samsung EVO <abbr title="Solid State Drive">SSD</abbr> 250GB.<br>
+    My downloads are stored on a Toshiba <abbr title="Hard Disk Drive">HDD</abbr> 1TB.<br>
+    Windows 7 is currently the best option for modding Fallout New Vegas.<br>
+    Windows 10 has a few issues that I will make note of throughout the guide.<br>
+  </p>
+  <hr>
+  <h1 id="Mod-Installation-Advice">Mod Installation Advice</h1>
+  <ul>
+    <li><span class="notice">Main Files</span> + <span class="notice">Updates</span> + <span class="notice">Hotfixes</span>
+      - Install as one mod. (e.g. merge together in MO2)</li>
+    <li><span class="notice">Optional Files</span> - Install as separate mod in MO2.</li>
+    <li><span class="notice">Miscellaneous files</span> - Install as separate mod in MO2.</li>
+    <li><span class="notice">Patches</span> - Install as separate mod in MO2.</li>
+    <li>Read the descriptions, pinned comments, and read-me’s of mods before commenting in the Discord about a
+      mod-specific issue to see if one of them has the solution.<br>
+      It’s also a good idea to read them to see if you will like the mod, as minddessly installing every mod on here
+      might not be the best result for your personal taste.</li>
+    <li>If I don’t give any special install instructions for a mod, just install the main file.</li>
+    <li>If I say "<em><span class="notice">Special Install Instructions: Don’t Install the following Files/Folders:</span></em>",<br>
+      uncheck the box next to the listed file/folder during the installation in MO2.
+    </li>
+    <li>Track every mod you install, so you know when it’s updated. I won’t be making announcements when any mods are
+      updated so that’s up to you. Also endorse the mods you if like them.</li>
+  </ul>
+  <h1 id="A-Note-About-the-Plugin-Limit">A Note About the Plugin Limit</h1>
+  <p>
+    The Gamebryo engine isn’t exactly very polished.<br>
+    Unlike Skyrim and Fallout 4 that have a max 255 plugin count,<br>
+    Fallout 3 and New Vegas have a soft cap of 140.<br>
+    However, the game can experience instability from 137 plugins and onward.<br>
+    For that reason, the guide will always stay under 120 plugins.<br>
+    If you are adding your own mods, try to get familiar with Merge Plugins tool<br>
+    so you can try to stay below 120 plugins.<br>
+    A mod in the guide will warn you when you go above 139 plugins when you are in-game.
+  </p>
+  <hr>
+  <h1 id="Prerequisites">Prerequisites</h1>
+  Install all to any folder where you can access it easily, unless instructed otherwise.
+  <h3 id="Mod-Organizer-2">
+    <a href="https://www.nexusmods.com/skyrimspecialedition/mods/6194/?tab=files" target="_blank" rel="noopener">Mod
+      Organizer 2</a>
+  </h3>
+  <p> By far the best mod manager for Fallout New Vegas.<br>
+    For an explanation of its advantages and a basic tutorial,<br>
+    watch Gopher’s video series <a href="https://www.youtube.com/watch?v=j4ZQpzf_iAE&amp;list=PLE7ddYarj-DcLS9LyjEqOJwFUQIIQewcK"
+      target="_blank" rel="noopener">here</a>.<br>
+    Join the team’s <a href="https://discord.gg/dVChxen" target="_blank" rel="noopener">Discord</a> for
+    developer builds and issue reports.
+  </p>
+  <h3 id="FNVEdit">
+    <a href="https://www.nexusmods.com/newvegas/mods/34703?tab=files" target="_blank" rel="noopener">FNVEdit</a>
+  </h3>
+  <span class="notice">Special Install Instructions:</span>
+  <blockquote>
+    Download <a href="https://mega.nz/#!0QRVAQKa!6dDsprHGy9iuI85k0QYzNtGzH4vZO4uh_tc7L_671ME" target="_blank" rel="noopener">Generate
+      Bash Tags.pas</a> and the scripts from <a href="https://github.com/matortheeternal/TES5EditScripts" target="_blank"
+      rel="noopener">TES5EditScripts</a>.
+    <br>
+    Navigate to <em>…FNVEdit\Edit Scripts</em> and move the script to you just downloaded there.
+    <br>
+    Download <a href="http://www.mediafire.com/file/bktk9439j8xxv80/MteFunctions.7z" target="_blank" rel="noopener">mteFunctions.pas</a>
+    and move the script to <em>…FNVEdit\Edit Scripts</em>.
+  </blockquote>
+  Mod editor that will be used to create merged patches, clean plugins, detect conflicts, and add bash tags to mods
+  later in the guide.
+  <h3 id="Wrye-Flash-NV">
+    <a href="https://www.nexusmods.com/newvegas/mods/35003?tab=files" target="_blank" rel="noopener">Wrye Flash NV</a>
+  </h3>
+  Files to install:
+  <blockquote>
+    Wrye Flash 17.9 - Standalone Executable
+  </blockquote>
+  <span class="notice">Special Install Instructions:</span>
+  <blockquote>
+    Extract the <em>Mopy</em> and <em>Data</em> folders to the New Vegas main directory.
+  </blockquote>
+  <p>
+    Multipurpose mod management utility, mainly used for conflict resolution.
+  </p>
+  <h3 id="LOOT">
+    <a href="https://www.nexusmods.com/skyrimspecialedition/mods/1918/?tab=files" target="_blank" rel="noopener">LOOT</a>
+  </h3>
+  <p>
+    Sorts load order and detects dirty plugins.
+  </p>
+  <h3 id="Merge-Plugins">
+    <a href="https://www.nexusmods.com/skyrim/mods/69905?tab=files" target="_blank" rel="noopener">Merge Plugins</a>
+  </h3>
+  <p>
+    Merges plugins to reduce load order.
+  </p>
+  <h3 id="FNVLODGen">
+    <a href="https://www.nexusmods.com/newvegas/mods/58562/?tab=files" target="_blank" rel="noopener">FNVLODGen</a>
+  </h3>
+  Files to install:
+  <blockquote>
+    FNVLODGen 3.2.1
+  </blockquote>
+  <p>
+    One-click LOD generator.
+  </p>
+  <h1 id="Configuring-Mod-Organizer">Configuring Mod Organizer</h1>
+  <ol>
+    <li> Launch MO2, and on the pop-up box that says <em>Choose Instance</em> pick <em>Portable</em>. On the next
+      pop-up, select your New Vegas game directory path.</li>
+    <li>Click <em>No</em> on the Start Tutorial pop-up.</li>
+    <li> Click <em>Yes</em> on the pop-up that asks Mod Organizer to handde nxm links.</li>
+    <li>In the right pane, right-click and select <em>Enable all</em>.</li>
+    <li>In the left pane, align the files in the same order that they are in the right pane.</li>
+    <li>Launch the game through MO2, and then immediately exit. This is just to set the .ini’s.</li>
+    <li>Click the <img src="img/MO2ConfigureProfilesIcon.png" alt="Mod Organizer 2 Configure Profiles icon" height="32"
+        width="32"> button on the top bar of MO2.</li>
+    <li>Click on the Default profile, and click <em>Copy</em></li>
+    <li>Name the new profile <em>Viva New Vegas</em>. Make sure <em>Local Game Settings</em> is checked.</li>
+    <li>Select the profile and check <em>Automatic Archive Invalidation</em>.</li>
+    <li>Close out of that box.</li>
+    <li>Select the new profile in the drop-down menu right above the left pane.</li>
+    <li>Click the <img src="img/MO2ConfigureSettingsIcon.png" alt="Mod Organizer 2 Configure Settings icon" height="32"
+        width="32"> button on the top bar of MO2.</li>
+    <li>If you are using an SSD and a separate HDD, click the <em>Paths</em> tab, and set the <em>Downloads</em>
+      directory to a location outside of the SSD.</li>
+    <li>Click on the <em>Nexus</em> tab and check <em>Automatically Log-In to Nexus</em>, type in your username and
+      password, and click <em>Associate with “Download with manager” links</em> and click <em>Ok</em>.</li>
+    <li>Click the <img src="img/MO2ConfigureExecutablesIcon.png" alt="Mod Organizer 2 Configure Executables icon"
+        height="32" width="32"> button on the top bar of MO2.</li>
+    <li>In the <em>Title</em> box, type <em>FNVEdit</em>.</li>
+    <li>In the <em>Binary</em> box, click the three dots on the right and navigate to where FNVEdit is installed and
+      double click <em>FNVEdit.exe</em>.</li>
+    <li>In the <em>Arguments</em> box, type <em>-IKnowWhatImDoing</em> and click <em>Add</em>.</li>
+    <li>Add Merge Plugins the same way you added FNVEdit without anything in the <em>Arguments</em> box.</li>
+    <li>Launch <em>Merge Plugins</em> through MO2.</li>
+    <li>Select the <em>FNV</em> profile and click [OK] and then immediately exit.</li>
+    <li>Add <em>-profile FNV</em> to the arguments for <em>Merge Plugins</em>.</li>
+    <li>Add LOOT, Wrye Flash, and FNVLODGen the same way you added the previous but without anything in the <em>Arguments</em>
+      box.</li>
+  </ol>
+  <h1 id="INI-Tweaks">INI Tweaks</h1>
+  <ol>
+    <li>Click the <img src="img/MO2ToolsIcon.png" alt="Mod Organizer 2 tools icon" height="32" width="32"> button on
+      the top bar of MO2.</li>
+    <li>Select <em>INI Editor</em>.</li>
+    <li>Paste the following into the <em>FalloutCustom.ini</em> tab:</li>
+    <figure>
+      <pre aria-labelledby="example1-caption"><code contenteditable spellcheck="false">[General]
 bUseThreadedAI=1
 INumHWThreads=2
 bPreemptivelyUnloadCells=1
@@ -265,63 +279,68 @@ fForegroundMouseMult=0
 
 [Grass]
 fGrassStartFadeDistance = 17000</code></pre>
-        </figure>
-        <p><a href="https://hackmd.io/s/B1_KJVRjm" target="_blank" rel="noopener">What Do These Tweaks Do?</a></p>
-    </ol>
-    <h1 id="Utilities"><a href="https://hackmd.io/s/HybJzBb9X" target="_blank" rel="noopener">Utilities</a></h1>
-    <h1 id="Optional-Utilities"><a href="https://hackmd.io/s/B1YgI2Ds7" target="_blank" rel="noopener">Optional
-            Utilities</a></h1>
-    <h1 id="Bug-FixesQOL-Improvements"><a href="https://hackmd.io/s/BkYj7rb97" target="_blank" rel="noopener">Bug
-            Fixes/QOL Improvements</a></h1>
-    <p>CHOOSE ONE OF THE FOLLOWING TWO:</p>
-    <h1 id="HUDUI-DarnUI-Version"><a href="https://hackmd.io/s/Bkepau-cm" target="_blank" rel="noopener">HUD/UI
-            (DarnUI
-            Version)</a></h1>
-    <h1 id="HUDUI-Vanilla-UI-Plus-Version"><a href="https://hackmd.io/s/BJrh_YZ9m" target="_blank" rel="noopener">HUD/UI
-            (Vanilla UI Plus Version)</a></h1>
-    <div class="alert alert-info">
-        <p>Now would be a good time to run the game to make sure everything is working.<br>
-            Before launching the game, run LOOT. LOOT should be run every time before you test the game. Start the
-            game
-            and load up a clean save. Make sure all of your HUD is installed correctly and check to see if the MCM
-            has
-            all the right entries.</p>
-    </div>
-    <h1 id="TexturesModelsVisuals-Recommended"><a href="https://hackmd.io/s/SkWDyxNo7" target="_blank" rel="noopener">Textures/Models/Visuals
-            (Recommended)</a></h1>
-    <h1 id="TexturesModelsVisuals-Optional"><a href="https://hackmd.io/s/rJk1rnM57" target="_blank" rel="noopener">Textures/Models/Visuals
-            (Optional)</a></h1>
-    <div class="alert alert-info">
-        <p>Now would be a good time to run the game to make sure everything is working.<br>
-            Start the game and load up a clean save. Make sure all the textures look as they should and Clarity is
-            working correctly. If for example, your road textures are still the default, you will need to re-enable
-            Automatic Archive Invalidation on your profile in MO2. <a href="https://imgur.com/a/021FV0G" target="_blank"
-                rel="noopener">Here</a> is an idea of what your game should look like if using all of the mods</p>
-    </div>
-    <script type="text/javascript">
-        (function () {
-            if (typeof (window.getComputedStyle) == 'undefined') {
-                return;
-            }
-            var pre = document.getElementsByTagName('pre');
-            for (var len = pre.length, i = 0; i < len; i++) {
-                var code = pre[i].getElementsByTagName('code').item(0);
-                if (!code) {
-                    code = pre[i].getElementsByTagName('samp').item(0);
-                    if (!code) {
-                        continue;
-                    }
-                }
-                var column = document.createElement('div');
-                column.setAttribute('aria-hidden', 'true');
-
-                for (var n = 0; n < code.innerHTML.split(/[\n\r]/g).length; n++) {
-                    column.appendChild(document.createElement('span'));
-                }
-                pre[i].insertBefore(column, code);
-                pre[i].className = 'line-numbers';
-            }
-
-        })();
-    </script>
+    </figure>
+    <p> <a href="https://hackmd.io/s/B1_KJVRjm" target="_blank" rel="noopener">What Do These Tweaks Do?</a> </p>
+  </ol>
+  <h1 id="Utilities">
+    <a href="https://hackmd.io/s/HybJzBb9X" target="_blank" rel="noopener">Utilities</a>
+  </h1>
+  <h1 id="Optional-Utilities">
+    <a href="https://hackmd.io/s/B1YgI2Ds7" target="_blank" rel="noopener">Optional Utilities</a>
+  </h1>
+  <h1 id="Bug-FixesQOL-Improvements">
+    <a href="https://hackmd.io/s/BkYj7rb97" target="_blank" rel="noopener">Bug Fixes/QOL Improvements</a>
+  </h1>
+  <p>CHOOSE ONE OF THE FOLLOWING TWO:</p>
+  <h1 id="HUDUI-DarnUI-Version">
+    <a href="https://hackmd.io/s/Bkepau-cm" target="_blank" rel="noopener">HUD/UI (DarnUI Version)</a>
+  </h1>
+  <h1 id="HUDUI-Vanilla-UI-Plus-Version">
+    <a href="https://hackmd.io/s/BJrh_YZ9m" target="_blank" rel="noopener">HUD/UI (Vanilla UI Plus Version)</a>
+  </h1>
+  <div class="alert alert-info">
+    <p> Now would be a good time to run the game to make sure everything is working.
+      <br /> Before launching the game, run LOOT. LOOT should be run every time before you test the game. Start the
+      game and load up a clean save. Make sure all of your HUD is installed correctly and check to see if the MCM has
+      all the right entries. </p>
+  </div>
+  <h1 id="TexturesModelsVisuals-Recommended">
+    <a href="https://hackmd.io/s/SkWDyxNo7" target="_blank" rel="noopener">Textures/Models/Visuals (Recommended)</a>
+  </h1>
+  <h1 id="TexturesModelsVisuals-Optional">
+    <a href="https://hackmd.io/s/rJk1rnM57" target="_blank" rel="noopener">Textures/Models/Visuals (Optional)</a>
+  </h1>
+  <div class="alert alert-info">
+    <p> Now would be a good time to run the game to make sure everything is working.
+      <br /> Start the game and load up a clean save. Make sure all the textures look as they should and Clarity is
+      working correctly. If for example, your road textures are still the default, you will need to re-enable Automatic
+      Archive Invalidation on your profile in MO2. <a href="https://imgur.com/a/021FV0G" target="_blank" rel="noopener">Here</a>
+      is an idea of what your game should look like if using all of the mods </p>
+  </div>
+  <script type="text/javascript">
+    (function () {
+      if (typeof window.getComputedStyle == "undefined") {
+        return;
+      }
+      var pre = document.getElementsByTagName("pre");
+      for (var len = pre.length, i = 0; i < len; i++) {
+        var code = pre[i].getElementsByTagName("code").item(0);
+        if (!code) {
+          code = pre[i].getElementsByTagName("samp").item(0);
+          if (!code) {
+            continue;
+          }
+        }
+        var column = document.createElement("div");
+        column.setAttribute("aria-hidden", "true");
+        for (var n = 0; n < code.innerHTML.split(/[\n\r]/g).length; n++) {
+          column.appendChild(document.createElement("span"));
+        }
+        pre[i].insertBefore(column, code);
+        pre[i].className = "line-numbers";
+      }
+    })();
+  </script>
 </body>
+
+</html>
