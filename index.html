@@ -57,7 +57,8 @@
           aria-disabled="true">Future Considerations</a></span></strong>
   </p>
   <p>
-    <strong><span class="isDisabled"><a class="isDisabled" href="" target="_blank" rel="noopener noreferrer" aria-disabled="true">Discord</a></span></strong>
+    <strong><span class="isDisabled"><a class="isDisabled" href="" target="_blank" rel="noopener noreferrer"
+          aria-disabled="true">Discord</a></span></strong>
     - For troubleshooting/help, suggestions, and announcements when the guide is updated.
   </p>
   <hr>
@@ -249,9 +250,9 @@
       the top bar of MO2.</li>
     <li>Select <em>INI Editor</em>.</li>
     <li>Paste the following into the <em>FalloutCustom.ini</em> tab:</li>
-    </ol>
-    <figure>
-      <pre aria-labelledby="example1-caption"><code contenteditable spellcheck="false">[General]
+  </ol>
+  <figure>
+    <pre aria-labelledby="example1-caption"><code contenteditable spellcheck="false">[General]
 bUseThreadedAI=1
 INumHWThreads=2
 bPreemptivelyUnloadCells=1
@@ -288,8 +289,111 @@ fForegroundMouseMult=0
 
 [Grass]
 fGrassStartFadeDistance = 17000</code></pre>
-    </figure>
-    <p> <a href="https://hackmd.io/s/B1_KJVRjm" target="_blank" rel="noopener">What Do These Tweaks Do?</a> </p>
+  </figure>
+  <button class="collapsible">What do these tweaks do?</button>
+  <div class="content">
+    <table>
+      <tr>
+        <th>Setting</th>
+        <th>Explanation</th>
+      </tr>
+      <tr>
+        <td>bUseThreadedAI=1</td>
+        <td>Limits the game to two cores to prevent crashing</td>
+      </tr>
+      <tr>
+        <td>INumHWThreads=2</td>
+        <td>Allows AI to use threads to increase performance</td>
+      </tr>
+      <tr>
+        <td>bPreemptivelyUnloadCells=1</td>
+        <td>Prevents ‘Out of Memory’ crashes when changing cells</td>
+      </tr>
+      <tr>
+        <td>bLoadFaceGenHeadEGTFiles=1</td>
+        <td>Needed with face overhauls,<br>prevents white-face bug</td>
+      </tr>
+      <tr>
+        <td>bSelectivePurgeUnusedOnFastTravel=1</td>
+        <td>Prevents ‘Out of Memory’ crashes when fast-travelling</td>
+      </tr>
+      <tr>
+        <td>fLightLODDefaultStartFade=10240.0</td>
+        <td rowspan="12">Increases Light Distance Fade</td>
+      </tr>
+      <tr>
+        <td>fLightLODRange=10240.0</td>
+      </tr>
+      <tr>
+        <td>fLightLODMinStartFade=10240.0</td>
+      </tr>
+      <tr>
+        <td>fLightLODMaxStartFade=10240.0</td>
+      </tr>
+      <tr>
+        <td>fShadowLODDefaultStartFade=200.0</td>
+      </tr>
+      <tr>
+        <td>fShadowLODRange=200.0</td>
+      </tr>
+      <tr>
+        <td>fShadowLODMinStartFade=100.0</td>
+      </tr>
+      <tr>
+        <td>fShadowLODMaxStartFade=1000.0</td>
+      </tr>
+      <tr>
+        <td>fSpecularLODDefaultStartFade=10240.0</td>
+      </tr>
+      <tr>
+        <td>fSpecularLODRange=10240.0</td>
+      </tr>
+      <tr>
+        <td>fSpecularLODMinStartFade=10240.0</td>
+      </tr>
+      <tr>
+        <td>fSpecularLODMaxStartFade=10240.0</td>
+      </tr>
+      <tr>
+        <td>fDefaultFOV=90.0000</td>
+        <td rowspan="4">Changes FOV<br>(Can be changed to a value you like, these ones are recommended)</td>
+      </tr>
+      <tr>
+        <td>fPipboy1stPersonFOV=55.0</td>
+      </tr>
+      <tr>
+        <td>fDefault1stPersonFOV=70.0000</td>
+      </tr>
+      <tr>
+        <td>fDefaultWorldFOV=90.0</td>
+      </tr>
+      <tr>
+        <td>iPresentInterval=0</td>
+        <td>Disables V-Sync</td>
+      </tr>
+      <tr>
+        <td>bFull Screen=0</td>
+        <td>Disables Full Screen<br>(OneTweak has borderless fullscreen)</td>
+      </tr>
+      <tr>
+        <td>fForegroundMouseAccelBase=0</td>
+        <td rowspan="4">Disables Mouse Acceleration</td>
+      </tr>
+      <tr>
+        <td>fForegroundMouseAccelTop=0</td>
+      </tr>
+      <tr>
+        <td>fForegroundMouseBase=0</td>
+      </tr>
+      <tr>
+        <td>fForegroundMouseMult=0</td>
+      </tr>
+      <tr>
+        <td>fGrassStartFadeDistance=17000</td>
+        <td>Increases Grass Distance Fade</td>
+      </tr>
+    </table>
+  </div>
   <h1 id="Utilities">
     <a href="https://hackmd.io/s/HybJzBb9X" target="_blank" rel="noopener">Utilities</a>
   </h1>
@@ -321,7 +425,8 @@ fGrassStartFadeDistance = 17000</code></pre>
   <div class="alert alert-info">
     <p> Now would be a good time to run the game to make sure everything is working.
       <br /> Start the game and load up a clean save. Make sure all the textures look as they should and Clarity is
-      working correctly. If for example, your road textures are still the default, you will need to re-enable Automatic
+      working correctly. If for example, your road textures are still the default, you will need to re-enable
+      Automatic
       Archive Invalidation on your profile in MO2. <a href="https://imgur.com/a/021FV0G" target="_blank" rel="noopener">Here</a>
       is an idea of what your game should look like if using all of the mods </p>
   </div>
@@ -348,6 +453,21 @@ fGrassStartFadeDistance = 17000</code></pre>
         pre[i].className = "line-numbers";
       }
     })();
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
   </script>
 </body>
 
